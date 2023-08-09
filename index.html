@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odd number count</title>
+</head>
+<body>
+    <h1>This button used for chack odd number in an array <br>
+    [2,3,4,,1,4,6,7,8,9,5,3,6,23,4,5,6,45,33,56,11,22,23]</h1>
+    <button onclick="oddNumber()">click here</button>
+    <h2 id="output"></h2>
+
+    <script>
+        var show=document.getElementById("output")
+        var odd=0;
+        var array= [2,3,4,,1,4,6,7,8,9,5,3,6,23,4,5,6,45,33,56,11,22,23];
+        for(let i=0; i<array.length; i++)
+        if(array[i] % 2 == 1){
+            odd=array[i]
+            show.innerHTML+=odd + "<br>"
+        }
+    </script>
+    
+</body>
+</html>
